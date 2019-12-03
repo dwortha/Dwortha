@@ -1,0 +1,137 @@
+﻿<?php
+if($_POST["message"]) {
+    mail("lflswebdevelopment@gmail.com", "Form to email message", $_POST["message"], "From: webDevContact.address");
+}
+?>
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <title>Darius Wortham| Portfolio </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body class="subpage">
+
+
+    <!-- Header -->
+    <header id="header">
+        <div class="inner">
+            <a href="index.html" class="logo"><strong>Darius Wortham</strong> </a>
+            <nav id="nav">
+                <a href="index.html">Home</a>
+                <a href="portfolio.html#portfolio">Projects</a>
+                <a href="resume.html">About Me</a>
+                <a href="portfolio.html#contactSect">Contact</a>
+
+            </nav>
+            <a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+        </div>
+    </header>
+
+
+    <!-- main -->
+    <section id="three" class="wrapper">
+        <div class="inner">
+            <header class="align-center-portfolio">
+                <h2>Projects</h2>
+                <p>Overtime learning as I learned new skills and techniques, I created projects to put my skill to the test. The portfolio is broken into section: front-end, back-end, and freelance projects. As I continue to learn and develop my skill, I will upload more project to showcase my skill set. Thank you for viewing my portfolio and if you would like a website build feel, free to contact me.</p>
+            </header>
+        </div>
+    </section>
+    <div class="main">
+
+
+
+        <!-- Portfolio Gallery Grid -->
+        <div class="body-Gal">
+
+            <div class="row-Gal">
+                <div class="content-Gal">
+                    <iframe src="FIrstSolo/index.html" height="700" width="900" class="emb-web"></iframe>
+                    <div class="Gal-footer emb-web">
+                        <h3>Small Business Website for Total Property Management</h3>
+                        <button class="GFG" onclick="window.location.href = '#';"> Code? </button>
+                        <button class="GFG" onclick="window.location.href = 'FIrstSolo/index.html';"> Website </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+            <div class="row-Gal">
+                <div class="content-Gal">
+                    <iframe src="FIrstSolo/index.html" height="700" width="900" class="emb-web"></iframe>
+                    <div class="Gal-footer emb-web">
+                        <h3>Small Business Website for Total Property Management</h3>
+                        <button class="GFG" onclick="window.location.href = '#';"> Code? </button>
+                        <button class="GFG" onclick="window.location.href = 'FIrstSolo/index.html';"> Website </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+             <div class="column-Gal">
+                    <div class="content-Gal">
+                        <img src="images/tmp.png" alt="TPM-Website" style="width:100%">
+                        <h3>Small Business Website for Total Property Management</h3>
+                        <button class="GFG" onclick="window.location.href = '#';"> Code? </button>
+                        <button class="GFG" onclick="window.location.href = '#';"> Website </button>
+                    </div>
+                </div>
+              <div class="column-Gal">
+                    <div class="content-Gal">
+                        <img src="images/tmp.png" alt="TPM-Website" style="width:100%">
+                        <h3>Small Business Website for Total Property Management</h3>
+                        <button class="GFG" onclick="window.location.href = '#';"> Code? </button>
+                        <button class="GFG" onclick="window.location.href = '#';"> Website </button>
+                    </div>
+                </div>
+
+    <div class="content">
+        <img src="bear.jpg" alt="Bear" style="width:100%">
+        <h3>Some Other Work</h3>
+        <p>Lorem ipsum..</p>
+    </div>
+
+    -->
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+
+            <h3 id="contactSect">Get in touch</h3>
+
+            <form action="#" method="post">
+
+                <div class="field half first">
+                    <label for="name">Name</label>
+                    <input name="name" id="name" type="text" placeholder="Name">
+                </div>
+                <div class="field half">
+                    <label for="email">Email</label>
+                    <input name="email" id="email" type="email" placeholder="Email">
+                </div>
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+                </div>
+                <ul class="actions">
+                    <li><input value="Send Message" class="button alt" type="submit"></li>
+                </ul>
+            </form>
+
+
+
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
